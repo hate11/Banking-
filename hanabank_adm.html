@@ -1,0 +1,415 @@
+/*****************************************************************************
+ * ssh,vpn 접근 계정 id/pw kebroot/adm123! 
+ *****************************************************************************/
+var mainEventslide = `
+	<div class="autoplay">
+	<button class="play">
+		<span>재생</span>
+	</button>
+	<button class="stop">
+		<span>정지</span>
+	</button>
+	<span class="slide_num">
+		<b></b>/
+		<i></i>
+	</span>
+	</div>
+	<div class="slide-cont slides">
+      <!-- 축구Play [S] -->
+      <div class="ca-cont">
+        <div class="bg-cont">
+          <img alt="" src="${pb_img_root}cont/common/img/newmain2021/football_play_main_slide.png" aria-hidden="true" />
+        </div>
+        <div class="text-wrap">
+          <div class="text-cont">
+            <i>이벤트</i>
+            <p style="font-weight: 800;">축구는 하나다!<br>하나원큐 축구Play</p>
+            <span>축구... 좋아하세요?
+              <br>매일매일 미션 참여하고 원큐볼 받으세요!</span>
+            <div class="m-btn">
+              <a title="자세히보기" href="/cont/play.jsp" target="_blank">자세히보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- // 축구Play [E] -->
+      
+      <!-- 여름돈기운상점이벤트 [S] -->
+      <div class="ca-cont">
+        <div class="bg-cont">
+          <img alt="" src="${pb_img_root}cont/common/img/newmain2021/1501857_main_slide.png" aria-hidden="true" />
+        </div>
+        <div class="text-wrap">
+          <div class="text-cont">
+            <i>이벤트</i>
+            <p style="font-weight: 800;">골라~골라~ 여름<br>돈기운 상점 오픈!</p>
+            <span># 진짜 황금 행운
+              <br># 씨드머니 키우기</span>
+            <div class="m-btn">
+              <a title="자세히보기" href="/cont/news/news02/1501857_115431.jsp">자세히보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- // 여름돈기운상점이벤트 [E] -->
+
+      <!-- 아이부자 3주년 이벤트 [S] -->
+      <div class="ca-cont">
+        <div class="bg-cont">
+          <img alt="" src="${pb_img_root}cont/common/img/newmain2021/1501855_main_slide.png" aria-hidden="true" />
+        </div>
+        <div class="text-wrap">
+          <div class="text-cont">
+            <i>이벤트</i>
+            <p style="font-weight: 800;">아이부자 3주년<br>매일 매일 부자 이벤트</p>
+            <span>하루에 한 번 즉석 경품 당첨!<br>에어팟 프로의 혜택까지!</span>
+            <div class="m-btn">
+              <a title="자세히보기" href="/cont/news/news02/1501855_115431.jsp">자세히보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- // 아이부자 3주년 이벤트 [E] -->
+
+      <!-- 2024 첫 해외송금 이벤트 [S] -->
+      <div class="ca-cont">
+        <div class="bg-cont">
+          <img alt="" src="${pb_img_root}cont/common/img/newmain2021/1501778_mainbanner.png" aria-hidden="true" />
+        </div>
+        <div class="text-wrap">
+          <div class="text-cont">
+            <i>이벤트</i>
+            <p style="font-weight: 800;">2024 첫 해외송금<br>이벤트!</p>
+            <span>해외송금하면 1만 하나머니<br>유학생 지정만 해도 3만 하나머니~!</span>
+            <div class="m-btn">
+              <a title="자세히보기" href="/cont/news/news02/1501778_115431.jsp">자세히보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- // 2024 첫 해외송금 이벤트 [E] -->
+
+      <!-- 6월 하나데이 이벤트 [S] -->
+      <div class="ca-cont">
+          <div class="bg-cont">
+          <img alt="" src="${pb_img_root}cont/common/img/newmain2021/1501502_mainbanner.png" aria-hidden="true" />
+          </div>
+          <div class="text-wrap">
+          <div class="text-cont">
+              <i>이벤트</i>
+              <p style="font-weight: 800;">6월 1일은 하나데이</p>
+              <span>
+                  다이소금액권 3만원 111명
+                  <br />하나머니 랜덤 즉시 당첨!
+                  <br />6월 21일은 한 번 더 기회!                        
+              </span>
+              <div class="m-btn">
+              <a title="자세히보기" href="/cont/news/news02/1501502_115431.jsp">자세히보기</a>
+              </div>
+          </div>
+          </div>
+      </div>
+      <!-- // 6월 하나데이 이벤트 [E] -->
+
+      <!-- 손님 지킴이 이벤트 [S] -->
+      <div class="ca-cont">
+        <div class="bg-cont">
+          <img alt="" src="${pb_img_root}cont/common/img/newmain2021/1501043_main_slide-banner.png" aria-hidden="true" />
+        </div>
+        <div class="text-wrap">
+          <div class="text-cont">
+            <i>이벤트</i>
+            <p style="font-weight: 800;">알고도 당하는
+              <br>무서운 보이스피싱</p>
+            <span>
+              하나은행이 지켜드릴게요!
+            </span>
+            <div class="m-btn">
+              <a title="자세히보기" href="/cont/news/news02/1501043_115431.jsp">자세히보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- // 손님 지킴이 이벤트 [E] -->
+
+      <!-- FX마켓 이벤트 [S] -->
+      <!-- <div class="ca-cont">
+        <div class="bg-cont">
+          <img alt="" src="${pb_img_root}cont/common/img/newmain2021/1501349_main_slide.png" aria-hidden="true" />
+        </div>
+        <div class="text-wrap">
+          <div class="text-cont">
+            <i style="width:105px">FX마켓 이벤트</i>
+            <p style="font-weight: 800;">오늘을 기다렸어!
+              <br>환테크는 FX마켓</p>
+            <span>
+              #FX마켓 #투자일지
+            </span>
+            <div class="m-btn">
+              <a title="자세히보기" href="/cont/news/news02/1501349_115431.jsp">자세히보기</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- // FX마켓 이벤트 [E] -->
+
+      <!-- 가맹점 기존 입금손님 감사이벤트 2탄 [S] -->
+      <!-- <div class="ca-cont">
+        <div class="bg-cont">
+          <img alt="" src="${pb_img_root}cont/common/img/newmain2021/1501169_main_slide.png" aria-hidden="true" />
+        </div>
+        <div class="text-wrap">
+          <div class="text-cont">
+            <i>이벤트</i>
+            <p style="font-weight: 800;">가맹점 기존 입금손님<br>감사이벤트 2탄</p>
+            <span>
+              가맹점대금 입금 약속하고 1만 하나머니 받으세요!
+            </span>
+            <div class="m-btn">
+              <a title="자세히보기" href="/cont/news/news02/1501169_115431.jsp">자세히보기</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- // 가맹점 기존 입금손님 감사이벤트 2탄 [E] -->
+
+         <!-- 퇴직연금 5관왕 수상! 감사이벤트 [S] -->
+    	<!-- <div class="ca-cont">
+            <div class="bg-cont">
+                <img alt="" src="${pb_img_root}cont/common/img/newmain2021/1500815_main_slide.jpg" aria-hidden="true" />
+            </div>
+            <div class="text-wrap">
+                <div class="text-cont">
+                    <i>이벤트</i>                
+                    <p style="font-weight: 800;">DC 가입, 이전하고
+                        <br>1만 하나머니 받기</p>
+                    <span>
+                        #퇴직연금 DC #하나머니
+                    </span>
+                    <div class="m-btn">
+                        <a title="자세히보기" href="/cont/news/news02/1500815_115431.jsp">자세히보기</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- // 퇴직연금 5관왕 수상! 감사이벤트 [E] -->
+
+    <!-- 연금저축 이벤트 [S] -->
+    <!-- <div class="ca-cont">
+        <div class="bg-cont">
+        <img alt="" src="${pb_img_root}cont/common/img/newmain2021/1500612_main_slide.png" aria-hidden="true" />
+        </div>
+        <div class="text-wrap">
+        <div class="text-cont">
+            <i>이벤트</i>
+            <p style="font-weight: 800;">연금저축,<br>나만믿어요!</p>
+            <span>
+                #연금의골든타임 #1만하나머니<br>#잠자는연금 #깨워보세요
+            </span>
+            <div class="m-btn">
+            <a title="자세히보기" href="/cont/news/news02/1500612_115431.jsp">자세히보기</a>
+            </div>
+        </div>
+        </div>
+    </div> -->
+    <!-- // 연금저축 이벤트 [E] -->
+
+        <!-- 4대연금 이벤트 [S] -->
+        <!-- <div class="ca-cont">
+            <div class="bg-cont">
+            <img alt="4대연금 이벤트" src="${pb_img_root}cont/common/img/newmain2021/1497221_main_slide.png">
+            </div>
+            <div class="text-wrap">
+            <div class="text-cont">
+                <i>이벤트</i>
+                <p style="font-weight: 800;">
+                5(오)~
+                <br>나의 국민연금
+                </p>
+                <span>
+                #연금입금하면 #현금5만원 #순금1돈
+                </span>
+                <div class="m-btn">
+                <a title="자세히보기" href="/cont/news/news02/1497221_115431.jsp">자세히보기</a>
+                </div>
+            </div>
+            </div>
+        </div> -->
+        <!-- // 4대연금 이벤트 [E] -->
+
+        <!-- 하나원큐 첫손님 이벤트 [S] -->
+        <!-- <div class="ca-cont">
+            <div class="bg-cont">
+            <img src="${pb_img_root}cont/common/img/newmain2021/1493938_main_banner.png" alt="하나원큐 첫손님 이벤트" />
+            </div>
+            <div class="text-wrap">
+            <div class="text-cont">
+                <i style="width:130px">첫 손님 혜택 가이드</i>
+                <p style="font-weight: 800;">
+                하나원큐 아직
+                <br>사용해 보지 않으셨나요?
+                </p>
+                <span>쉽고 편리한 뱅킹은 기본!
+                <br />놓치면 안되는 혜택이 가득하답니다~</span>
+                <div class="m-btn">
+                <a href="/cont/news/news02/1496414_115431.jsp" title="자세히보기">자세히보기</a>
+                </div>
+            </div>
+            </div>
+        </div> -->
+        <!-- // 하나원큐 첫손님 이벤트 [E] -->
+    </div>
+
+	<div class="allslide">
+	<button class="allslide_btn">
+		<span>레이어팝업으로 슬라이드 전체보기</span>
+	</button>
+	</div>`;
+
+// ===================================================  이벤트 슬팝영역 시작 =============================== 
+
+var mainEventslidePopup = `
+    <div class="allslide-bg"></div>
+    <div class="allslide-inner">
+    <a style="position:absolute;left:-50000px;" href="javascript:void(0)" class="focus-on">포커스 레이어팝업으로</a>
+    <div class="slide-list">
+        <!-- 전체팝업 3개 배너 [S] -->
+        <div class="line-align">
+          
+          <!-- 축구Play [S] -->
+          <a title="이벤트 자세히보기" href="/cont/play.jsp" target="_blank">
+            <img alt="" src="${pb_img_root}cont/common/img/newmain2021/football_play_main_thum.jpg" aria-hidden="true" />
+            <div class="hid">
+              <p>축구는 하나다! 하나원큐 축구Play</p>
+              <span>축구... 좋아하세요? 매일매일 미션 참여하고 원큐볼 받으세요!</span>
+            </div>
+          </a>
+          <!-- // 축구Play [E] -->
+
+          <!-- 여름돈기운상점이벤트 [S] -->
+          <a title="이벤트 자세히보기" href="/cont/news/news02/1501857_115431.jsp">
+            <img alt="" src="${pb_img_root}cont/common/img/newmain2021/1501857_main_thum.jpg" aria-hidden="true" />
+            <div class="hid">
+              <p>골라~ 골라~ 여름 돈기운 상점 온픈!</p>
+              <span># 진짜 황금행운 # 씨드머니 키우기</span>
+            </div>
+          </a>
+          <!-- // 여름돈기운상점이벤트 [E] -->
+
+          <!-- 아이부자 3주년 이벤트 [S] -->
+          <a title="이벤트 자세히보기" href="/cont/news/news02/1501855_115431.jsp">
+              <img alt="" src="${pb_img_root}cont/common/img/newmain2021/1501855_main_thum.jpg" aria-hidden="true" />
+              <div class="hid">
+              <p>아이부자 3주년 매일 매일 부자 이벤트</p>
+              <span>하루에 한 번 즉석 경품 당첨!에어팟 프로의 혜택까지!</span>
+              </div>
+          </a>
+          <!-- // 아이부자 3주년 이벤트 [E] -->
+
+        </div>
+
+        <div class="line-align">
+          
+          <!-- 2024 첫 해외송금 이벤트 [S] -->
+          <a title="이벤트 자세히보기" href="/cont/news/news02/1501778_115431.jsp">
+              <img alt="" src="${pb_img_root}cont/common/img/newmain2021/1501778_mainthumb.jpg" aria-hidden="true" />
+              <div class="hid">
+              <p>2024 첫 해외송금 이벤트!</p>
+              <span>해외송금하면 1만 하나머니 유학생 지정만 해도 3만 하나머니~!</span>
+              </div>
+          </a>
+          <!-- // 2024 첫 해외송금 이벤트 [E] -->
+
+          <!-- 6월 하나데이 이벤트 [S] -->
+          <a title="이벤트 자세히보기" href="/cont/news/news02/1501502_115431.jsp">
+            <img alt="" src="${pb_img_root}cont/common/img/newmain2021/1501502_mainthumb.png" aria-hidden="true" />
+            <div class="hid">
+            <p>6월 1일은 하나데이</p>
+            <span>다이소금액권 3만원 111명
+                <br />하나머니 랜덤 즉시 당첨!
+                <br />6월 21일은 한 번 더 기회!
+            </span>
+            </div>
+          </a>
+          <!-- // 6월 하나데이 이벤트 [E] -->
+
+          <!-- 손님 지킴이 이벤트 [S] -->
+          <a title="이벤트 자세히보기" href="/cont/news/news02/1501043_115431.jsp">
+            <img alt="" src="${pb_img_root}cont/common/img/newmain2021/1501043_main_thumbnail.jpg" aria-hidden="true" />
+            <div class="hid">
+              <p>알고도 당하는 무서운 보이스피싱</p>
+              <span>하나은행이 지켜드릴게요!</span>
+            </div>
+          </a>
+          <!-- // 손님 지킴이 이벤트 [E] -->
+          <!-- FX마켓 이벤트 [S] -->
+          <!-- <a title="이벤트 자세히보기" href="/cont/news/news02/1501349_115431.jsp">
+            <img alt="" src="${pb_img_root}cont/common/img/newmain2021/1501349_main_thumbnail.png" aria-hidden="true" />
+            <div class="hid">
+              <p>오늘을 기다렸어! 환테크는 FX마켓</p>
+              <span>#FX마켓 #투자일지</span>
+            </div>
+          </a> -->
+          <!-- // FX마켓 이벤트 [E] -->
+
+          <!-- 가맹점 기존 입금손님 감사이벤트 2탄 [S] -->
+          <!-- <a title="이벤트 자세히보기" href="/cont/news/news02/1501169_115431.jsp">
+            <img alt="" src="${pb_img_root}cont/common/img/newmain2021/1501169_main_thum.png" aria-hidden="true" />
+            <div class="hid">
+              <p>가맹점 기존 입금손님 감사이벤트 2탄</p>
+              <span>가맹점대금 입금 약속하고 1만 하나머니 받으세요!</span>
+            </div>
+          </a> -->
+          <!-- // 가맹점 기존 입금손님 감사이벤트 2탄 [E] -->
+        
+          <!-- 퇴직연금 5관왕 수상! 감사이벤트 [S] -->
+          <!-- <a title="이벤트 자세히보기" href="/cont/news/news02/1500815_115431.jsp">
+            <img alt="" src="${pb_img_root}cont/common/img/newmain2021/1500815_main_pop.jpg" aria-hidden="true" />
+            <div class="hid">
+              <p>DC 가입, 이전하고 1만 하나머니 받기</p>
+              <span>#퇴직연금 DC #하나머니</span>
+            </div>
+          </a> -->
+          <!-- // 퇴직연금 5관왕 수상! 감사이벤트 [E] -->
+          
+          <!-- 연금저축 이벤트 [S] -->
+          <!-- <a title="이벤트 자세히보기" href="/cont/news/news02/1500612_115431.jsp">
+            <img alt="" src="${pb_img_root}cont/common/img/newmain2021/1500612_main_thumb.jpg" aria-hidden="true" />
+            <div class="hid">
+              <p>연금저축, 나만믿어요!</p>
+              <span>#연금의골든타임 #1만하나머니 #잠자는연금 #깨워보세요</span>
+            </div>
+          </a> -->
+          <!-- // 연금저축 이벤트 [E] -->
+
+        <!-- 4대연금 이벤트 [S] -->
+        <!-- <a title="4대연금 이벤트" href="/cont/news/news02/1497221_115431.jsp">
+            <img alt="4대연금 이벤트" src="${pb_img_root}cont/common/img/newmain2021/1497221_main_pop.jpg">
+            <div class="hid">
+                <p>5(오)~ 나의 국민연금</p>
+                <span>#연금입금하면 #현금5만원 #순금1돈</span>
+            </div>
+        </a> -->
+        <!-- // 4대연금 이벤트 [E] -->
+
+        <!-- 하나원큐 첫손님 이벤트 [S] -->
+        <!-- <a href="/cont/news/news02/1496414_115431.jsp" title="하나원큐 첫손님 이벤트">
+            <img src="${pb_img_root}cont/common/img/newmain2021/1493938_main_thum.png" alt="하나원큐 첫손님 이벤트" />
+            <div class="hid">
+            <p>
+                하나원큐 아직 사용해 보지 않으셨나요?
+            </p>
+            <span>쉽고 편리한 뱅킹은 기본! 놓치면 안되는 혜택이 가득하답니다.</span>
+            </div>
+        </a> -->
+        <!-- // 하나원큐 첫손님 이벤트 [E] -->
+
+        </div>
+
+    </div>
+    <div class="popup_close_bg">
+        <a href="javascript:void(0)" class="popup_close" title="슬라이드 전체보기 닫기">
+        <img src="${pb_img_root}cont/common/img/newmain2021/icon_close_slide.png" alt="슬라이드 전체보기 닫기" />
+        </a>
+    </div>
+    </div>`;
